@@ -4,10 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "rootDirectory": "frontend",
-    "buildCommand": "npm run build",
-    "installCommand": "npm install",
-    "outputDirectory": "dist"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host --port 4173"
   },
   "dependencies": {
     "react": "^18.3.1",
