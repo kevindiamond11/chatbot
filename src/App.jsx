@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 
+
 const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8000";
 
 function Message({ role, text, sources, notes }) {
