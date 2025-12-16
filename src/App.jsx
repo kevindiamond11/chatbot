@@ -26,7 +26,7 @@ function Message({ role, text, sources, notes }) {
 
 export default function App() {
   const [messages, setMessages] = useState([
-    { role: "bot", text: "Hi! Ask me about the ISSA Charter website.", sources: [] },
+    { role: "bot", text: "Hi! Ask me about the ISSA Charter.", sources: [] },
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -86,7 +86,7 @@ export default function App() {
     <div className="app">
       <header>
         <div className="title">ISSA Charter Chat</div>
-        <div className="status">Backend: {API_BASE}</div>
+        
       </header>
 
       <div className="chat" ref={scrollerRef}>
