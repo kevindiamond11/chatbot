@@ -12,6 +12,11 @@ body {
   margin: 0;
 }
 
+.app,
+#root {
+  width: 100%;
+}
+
 .app {
   max-width: 960px;
   margin: 0 auto;
@@ -193,7 +198,49 @@ button:not(:disabled):active {
     padding: 12px;
   }
 
+  header {
+    padding: 8px 10px;
+  }
+
+  .status {
+    display: none;
+  }
+
   .message .bubble {
     max-width: 90%;
+  }
+
+  textarea {
+    min-height: 44px;
+    padding: 10px 12px;
+  }
+
+  button {
+    min-width: 72px;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-height: 520px) {
+  .app {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  header {
+    padding: 8px 10px;
+  }
+
+  .status {
+    display: none;
+  }
+
+  textarea {
+    min-height: 40px;
+    padding: 10px 12px;
+  }
+
+  button {
+    padding: 10px 12px;
   }
 }
