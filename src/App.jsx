@@ -87,7 +87,6 @@ export default function App() {
     <div className="app">
       <header>
         <div className="title">ISSA Charter Chat</div>
-        <div className="status">Backend: {API_BASE}</div>
       </header>
 
       <div className="chat" ref={scrollerRef}>
