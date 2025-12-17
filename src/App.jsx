@@ -26,7 +26,7 @@ function Message({ role, text, sources, notes }) {
 
 export default function App() {
   const [messages, setMessages] = useState([
-    { role: "bot", text: "Hi! Ask me about the ISSAC charter.", sources: [] },
+    { role: "bot", text: "Hi! Ask me about the ISSAC.", sources: [] },
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -52,6 +52,7 @@ export default function App() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: trimmed }),
+
       });
       if (!res.ok) {
         throw new Error(`API error: ${res.status}`);
