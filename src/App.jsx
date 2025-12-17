@@ -26,7 +26,7 @@ function Message({ role, text, sources, notes }) {
 
 export default function App() {
   const [messages, setMessages] = useState([
-    { role: "bot", text: "Hi! Ask me about the ISSA Charter.", sources: [] },
+    { role: "bot", text: "Hi! Ask me about the ISSAC charter.", sources: [] },
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
